@@ -13,7 +13,7 @@ import static me.earth.earthhack.api.util.interfaces.Globals.mc;
 
 public class Earthhack implements ClientModInitializer {
 
-    private static final Logger LOGGER = LogManager.getLogger("3arthh4ck");
+    private static final Logger LOGGER = LogManager.getLogger("Sh4doWWare");
     public static final String NAME = "Sh4doWWare";
     public static final String VERSION = "(alpha 0.0.1)";
     public static long startMS;
@@ -22,10 +22,10 @@ public class Earthhack implements ClientModInitializer {
     public void onInitializeClient() {
         startMS = System.currentTimeMillis();
         GlobalExecutor.EXECUTOR.submit(() -> Sphere.cacheSphere(LOGGER));
-        LOGGER.info("\n\n ------------------ Initializing 3arthh4ck-fabric. ------------------ \n");
+        LOGGER.info("\n\n ------------------ Initializing Sh4doWWare. ------------------ \n");
         Managers.load();
         LOGGER.info("Prefix is " + Commands.getPrefix());
-        LOGGER.info("\n\n ------------------ 3arthh4ck-fabric initialized. ------------------ \n");
+        LOGGER.info("\n\n ------------------ Sh4doWWare initialized. ------------------ \n");
     }
 
     public static Logger getLogger() {
